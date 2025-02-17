@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solianyk Pavlo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .line {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .line1 { background-color: rgb(38, 6, 6); }
+        .line2 { background-color: rgb(9, 212, 134); }
+        .line3 { background-color: rgb(158, 34, 34); }
+        .line4 { background-color: rgb(45, 9, 9); }
+        .line5 { background-color: gray; }
+
+        .marquee {
+            position: absolute;
+            animation: move infinite linear;
+        }
+
+        @keyframes bounce-vertical {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(calc(100% - 100px));
+            }
+        }
+
+        @keyframes loop-up {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes stop-down {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes delay1 {
+            0% {
+                transform: translateY(100%);
+            }
+            30% {
+                transform: translateY(70%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes delay2 {
+            0% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(50%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .line1 .marquee {
+            animation: bounce-vertical 4s infinite ease-in-out;
+        }
+
+        .line2 .marquee {
+            animation: loop-up 6s infinite linear;
+        }
+
+        .line3 .marquee {
+            animation: stop-down 5s forwards linear;
+        }
+
+        .line4 .marquee {
+            animation: delay1 8s infinite linear;
+        }
+
+        .line5 .marquee {
+            animation: delay2 10s infinite linear;
+        }
+
+        img {
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="line line1">
+        <div class="marquee">Текст і рисунки коливаються <img src="https://img.freepik.com/free-vector/coloring-page-outline-cute-dragon_1308-138152.jpg" alt="Example"></div>
+    </div>
+    <div class="line line2">
+        <div class="marquee">
+            <img src="https://img.freepik.com/free-vector/coloring-page-outline-cute-dragon_1308-138152.jpg" alt="Example">
+            <img src="https://gas-kvas.com/uploads/posts/2023-03/thumbs/1677902784_gas-kvas-com-p-sobaka-risunok-detskii-prostoi-6.jpg" alt="Example">
+        </div>
+    </div>
+    <div class="line line3">
+        <div class="marquee">
+            <img src="https://gas-kvas.com/uploads/posts/2023-03/thumbs/1677902784_gas-kvas-com-p-sobaka-risunok-detskii-prostoi-6.jpg" alt="Example">
+            <img src="https://https://gas-kvas.com/uploads/posts/2023-03/thumbs/1677902784_gas-kvas-com-p-sobaka-risunok-detskii-prostoi-6.jpg" alt="Example">
+        </div>
+    </div>
+    <div class="line line4">
+        <div class="marquee">Текст з різним запізненням (1)</div>
+    <div class="line line5">
+        <div class="marquee">Текст з різним запізненням (2)</div>
+    </div>
+</body>
+</html>

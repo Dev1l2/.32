@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покемони</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: rgb(139, 0, 97);
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd3;
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        .friend img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .friend-info {
+            max-width: 600px;
+        }
+
+        .friend-info h3 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #22012b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Покемони</h1>
+    </header>
+
+    <nav>
+        <a href="#friend1" title="Дізнатися більше про Генгард">Генгард</a>
+        <a href="#friend2" title="Дізнатися більше про Пикачу">Пiкачу</a>
+        <a href="#friend3" title="Дізнатися більше про Бульбазавр">Бульбазавр</a>
+        <a href="#friend4" title="Дізнатися більше про Іві">Іві</a>
+        <a href="#friend5" title="Дізнатися більше про Чармандер">Чармандер</a>
+    </nav>
+
+    <section id="friend1" class="friend">
+        <img src="1.jpg" alt="Вольт Прайм">
+        <div class="friend-info">
+            <h3>Генгард</h3>
+            <p>Генгар – темно-фіолетовий покемон із круглим тілом. У процесі еволюції у нього з'явилися руки та ноги, а також загострені вуха та хутро на лобі. Очі Генгара червоні, а на обличчі зловісна посмішка.</p>
+        </div>
+    </section>
+
+    <section id="friend2" class="friend">
+        <img src="2.jpg" alt="Пiкачу">
+        <div class="friend-info">
+            <h3>Пiкачу</h3>
+            <p>Будучи покемоном електричного типу, Пікачу може накопичувати у своїх щічках електрику та за необхідності атакувати з його допомогою. Внутрішньоігровий Покедекс, а також Покедекс в анімі стверджує, що Пікачу є покемоном-мишею.</p>
+        </div>
+    </section>
+
+    <section id="friend3" class="friend">
+        <img src="3.jpg" alt="Бульбазавр">
+        <div class="friend-info">
+            <h3>Бульбазавр</h3>
+            <p>Бульбазавр - стартовий покемон подвійного трав'яного/отруйного типу з першого покоління та регіону Канто.</p>
+        </div>
+    </section>
+
+    <section id="friend4" class="friend">
+        <img src="4.jpg" alt="Іві">
+        <div class="friend-info">
+            <h3>Іві</h3>
+            <p>Іві — маленький кремезний чотирилапий покемон коричневого забарвлення і з дуже милою зовнішністю.</p>
+        </div>
+    </section>
+
+    <section id="friend5" class="friend">
+        <img src="5.jpg" alt="Чармандер">
+        <div class="friend-info">
+            <h3>Чармандер</h3>
+            <p>Чармандер являє собою двоногу рептилію червонувато-жовтогарячого кольору, з блакитними очима і кремовим черевцем. Зовні Чармандер схожий на динозавра, зокрема на теропода.</p>
+        </div>
+    </section>
+</body>
+</html>
